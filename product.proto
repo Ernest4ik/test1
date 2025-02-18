@@ -1,0 +1,16 @@
+syntax = "proto3";
+package buffer;
+option go_package = "./";
+
+message Product{
+    int32 id = 1;
+    string name = 2;
+    int32 amount = 3;
+    Type type = 4;
+    
+    enum Type{
+        GrainProducts = 0;
+        Vegetable = 1;
+    }
+
+}
